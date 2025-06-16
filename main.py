@@ -44,7 +44,7 @@ embedding_model = CohereEmbeddings(
 print("Embedding Model Loaded . . . .")
 
 
-# Step 4: Create vector store (e.g., FAISS)
+# Step 4: Create vector store
 vectorstore = Chroma.from_documents(
     documents=split_docs,
     embedding= embedding_model,
